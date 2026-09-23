@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Service</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#f1fff4] text-black">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="bg-white h-[60px] flex items-center justify-between px-[4%]">
+
+       
+        <div class="flex items-center gap-2">
+
+            
+            <div
+                class="w-[85px] h-[35px] border-2 border-dashed border-green-600 flex items-center justify-center">
+                <img class="size-8" src="./assets/logo.png" alt="">
+            </div>
+
+            <div class="text-[#007f42] leading-[13px]">
+                <h3 class="text-[13px] font-bold">Emergency</h3>
+                <h3 class="text-[13px] font-bold">Service</h3>
+            </div>
+
+        </div>
+
+
+        <!-- Right -->
+
+        <div class="flex items-center gap-2">
+
+            <!-- Heart -->
+            <div
+                class="min-w-[55px] h-[32px] bg-[#edfff2] rounded-full flex items-center justify-center gap-1 text-[12px]">
+
+                <span class="text-red-500 text-[30px]">♥</span>
+
+                <span id="heart-count">0</span>
+
+            </div>
+
+
+            <!-- Coins -->
+
+            <div
+                class="min-w-[55px] h-[32px] bg-[#edfff2] rounded-full flex items-center justify-center gap-1 text-[12px]">
+
+                <span><img class="size-5" src="./assets/coin.png" alt=""></span>
+
+                <span id="coin-count">100</span>
+
+            </div>
+
+
+            <!-- Copy -->
+
+            <button
+                class="h-[32px] px-4 bg-[#00a63c] text-white rounded-full text-[11px]">
+
+                <span id="copy-count">0</span>
+                Copy
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section
+        class="bg-gradient-to-r from-[#005b3f] via-[#00754c] to-[#00613f] text-white text-center px-5 py-3">
+
+        <!-- Logo -->
+
+        <div
+            class="w-[45px] h-[45px] border border-white/70 rounded-full mx-auto mb-2">
+
+            <img src="./assets/logo-dark.png" alt="">
+
+        </div>
+
+
+        <h1 class="text-[22px] font-bold mb-2">
+            জরুরি সেবা ডিরেক্টরি
+        </h1>
+
+
+        <p class="text-[10px]">
+            Government Emergency Services at Your Fingertip –
+            A Project by Government of the People’s Republic of Bangladesh
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main
+        class="max-w-[1200px] mx-auto px-6 py-6 grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-[15px]">
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section>
+
+            <div
+                id="service-grid"
+                class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[13px]">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= HISTORY ================= -->
+
+        <aside
+            class="bg-white border border-[#e2e8e4] rounded-[7px] min-h-[510px] overflow-hidden">
+
+            <!-- Header -->
+
+            <div
+                class="flex items-center justify-between p-3">
+
+                <h2
+                    class="text-[12px] font-semibold flex items-center gap-1">
+
+                    <span>◷</span>
+
+                    Call History
+
+                </h2>
+
+
+                <button
+                    id="clear-history"
+                    class="bg-[#00a63c] text-white px-4 py-2 rounded-full text-[9px] font-bold">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+
+            <!-- History List -->
+
+            <div
+                id="history-list"
+                class="px-[10px]">
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
